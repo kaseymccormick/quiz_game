@@ -23,6 +23,7 @@ optFour.innerText = ("D. Has two children");
 
 }
 
+
 function given_answer(){
   return document.getElementById("answer").value;
 }
@@ -31,14 +32,28 @@ var answer_text = given_answer().toLowerCase();
  
 console.log(answer_text)
 
+
+
 function is_correct_answer(answer_text){
-  if (answer_text === "d")
+  if (answer_text !== "d")
  
-  return true 
+  return false 
   
 }
 
-// look up if statemnt in javascript find the syntax to do if is_correct_answer return true do ...
+// the below kills the above var opt etc from working. i've tried it here and above the is_correct_answer function. still kills the above. kills it inside of the scope of onload above is_correct_answer. Kills inside the scope but in this spot too. :(
+// if false(y) go to else
+// if is_correct_answer(answer_text)
+// {
+//     var response = ("correct!");
+// }
+// else
+// {
+//   var response = ("not the correct answer");
+// }
+//
+// }
+    
 
 
      
