@@ -41,18 +41,48 @@ function is_correct_answer(answer_text){
   
 }
 
-// the below kills the above var opt etc from working. i've tried it here and above the is_correct_answer function. still kills the above. kills it inside of the scope of onload above is_correct_answer. Kills inside the scope but in this spot too. :(
-// if false(y) go to else
-// if is_correct_answer(answer_text)
-// {
-//     var response = ("correct!");
-// }
-// else
-// {
-//   var response = ("not the correct answer");
+
+///////EVERYTHING below KILLS the above///////////////////////////////
+
+// if (condition) {
+//     var grade = ("correct")
+//   block of code to be executed if the condition is true
+// } else {
+//     var grade =("incorrect")
+//     block of code to be executed if the condition is false
 // }
 //
+//
+// //http://stackoverflow.com/questions/11034997/how-can-i-conditionally-define-a-function-in-javascript//
+// if ( is_correct_answer ) {
+//   function is_correct_answer(answer_text){
+//     if (answer_text !== "d")
+//
+//     return false
+//
+//   };
 // }
+//
+//
+// if (false) {
+//     var foo = function () {
+//         alert("Foo");
+//     };
+// }
+// foo(); //TypeError: undefined is not a function
+//
+// // the below kills the above var opt etc from working. i've tried it here and above the is_correct_answer function. still kills the above. kills it inside of the scope of onload above is_correct_answer. Kills inside the scope but in this spot too. :(
+// // if false(y) go to else
+// // if is_correct_answer(answer_text)
+// // {
+// //     var response = ("correct!");
+// // }
+// // else
+// // {
+// //   var response = ("not the correct answer");
+// // }
+// //
+// // }
     
 
 
