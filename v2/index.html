@@ -23,10 +23,12 @@
  
     <input type="text" id="answer"></input>
     <button id="submitter">
+    </button>
  
       <div id="question_result">
       </div>
       <button id="next">
+      </button>
         <div id="total_result">
         </div>
       </div>
@@ -34,13 +36,13 @@
 
       <p>
        
-
-        Later, we will use the given_answer() method to define the value of this function's answer_text argument.
-        You'll need a way to indicate what the correct answer is. You might accomplish this a few different ways. One way is to just hard-code it in for now. Like I said before, we're only concerned with the first question for now, so it's okay that this code won't work as it is for multiple questions.
-        Again, you can test this code in the console.
-        Write a function called update_question_result, which takes one argument (named correct). When the argument is true, the function sets the content of #question_result to "Success!". Otherwise, the function sets the content of #question_result to "Wrong!".
-        You can test this out in console too.
-        Now we have the various pieces of functionality that would be needed to make this question and its answering interactive. But it's not interactive yet. We're doing everything manually in the console. Let's have these functions run on their own when the user submits their answer.
+Write a function called process_answer_submission. It should look something like this:
+function process_answer_submission(){
+  var user_answer = given_answer();
+  update_question_result(is_correct_answer(user_answer));
+}
+Now we want that function to run whenever button#submitter is clicked. You might need to do some research to figure this out. Hint: What you're trying to do here is attach an "event handler" to the button. The "event" is "click". So you're trying to define how the button handles being clicked. Specifically, you're trying to say that the behavior of the button, when it's clicked, should be as described in the process_answer_submission function.
+        
   
       </p>
   
