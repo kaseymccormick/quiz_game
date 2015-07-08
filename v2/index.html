@@ -32,9 +32,15 @@
       </div>
  
 
-      <p>  Using Javascript, add the first question's content to div#question. So when you load the page, the first question's content should already be there.
-        Do the same thing for the question's choices (into div#choices).
-        Okay so now you have a non-functional quiz game, but at least it's showing the user the first question and choices. And there is a field for the user to enter their answer (and a button to submit it), but that doesn't actually do anything yet. So let's fix that. (After this, we'll worry about going through multiple questions – for now, we'll deal with the first question alone.)
+      <p>
+       
+
+        Later, we will use the given_answer() method to define the value of this function's answer_text argument.
+        You'll need a way to indicate what the correct answer is. You might accomplish this a few different ways. One way is to just hard-code it in for now. Like I said before, we're only concerned with the first question for now, so it's okay that this code won't work as it is for multiple questions.
+        Again, you can test this code in the console.
+        Write a function called update_question_result, which takes one argument (named correct). When the argument is true, the function sets the content of #question_result to "Success!". Otherwise, the function sets the content of #question_result to "Wrong!".
+        You can test this out in console too.
+        Now we have the various pieces of functionality that would be needed to make this question and its answering interactive. But it's not interactive yet. We're doing everything manually in the console. Let's have these functions run on their own when the user submits their answer.
   
       </p>
   

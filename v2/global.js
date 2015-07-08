@@ -1,4 +1,5 @@
 //to get css to load first doing window.onload
+//anoynomous function that only runs once, there's no other way to call it it doesn't have a 'proper' name
 window.onload = function(){
   // All the rest of your Javascript code
  //< put that on the outside of EVERYTHING
@@ -20,5 +21,24 @@ optThree.innerText = ("C. Born March 2nd");
 var optFour = document.getElementById("fourth");
 optFour.innerText = ("D. Has two children");
 
-
 }
+
+function given_answer(){
+  return document.getElementById("answer").value;
+}
+
+var answer_text = given_answer().toLowerCase();
+ 
+console.log(answer_text)
+
+function is_correct_answer(answer_text){
+  if (answer_text === "d")
+ 
+  return true 
+  
+}
+
+// look up if statemnt in javascript find the syntax to do if is_correct_answer return true do ...
+
+
+     
